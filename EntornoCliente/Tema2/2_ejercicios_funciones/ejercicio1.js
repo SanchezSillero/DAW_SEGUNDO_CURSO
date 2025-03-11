@@ -4,7 +4,29 @@ let num2 = prompt("Introduce el valor del segundo numero");
 num1 = parseInt(num1);
 num2 = parseInt(num2);
 
-function sumar(a, b) {
+let suma = (num1, num2) => {
+  return num1 + num2;
+};
+
+let resta = (num1, num2) => {
+  return num1 - num2;
+};
+
+let multiplica = (num1, num2) => {
+  return num1 * num2;
+};
+
+let divide = (num1, num2) => {
+  return num1 / num2;
+};
+
+alert(`Resultados:
+  Suma: ${suma(num1, num2)}
+  Resta: ${resta(num1, num2)}
+  Multiplicacion: ${multiplica(num1, num2)}
+  Division: ${divide(num1, num2)}`);
+
+/* function sumar(a, b) {
   return a + b;
 }
 
@@ -25,3 +47,4 @@ alert(`Resultados:
     Resta: ${restar(num1, num2)}
     Multiplicacion: ${multiplicar(num1, num2)}
     Division: ${dividir(num1, num2)}`);
+ */
